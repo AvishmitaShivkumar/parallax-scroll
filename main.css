@@ -1,0 +1,103 @@
+h1 {
+    font-family: 'Alex Brush', cursive;
+    font-size: 4rem;
+}
+
+h2, h3, p, a {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+
+a {
+    font-style: italic;
+    font-weight: bold;
+    color: #80937f;
+}
+
+.container {
+    position: relative;
+}
+
+.title, .content, .footnote {
+    /* Centers the content in their respective containers */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    /* Fixes the title at a specific position and sets it's dimensions*/
+    position: absolute;
+    top: 30vh;
+    width: 100%;
+    height: 15rem;
+
+    background-color: rgba(255,248,241,0.7);
+}
+
+.parallax-img1, .parallax-img2 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* Create the parallax scrolling effect 
+    fixed = parallax
+    scroll = normal */
+    background-attachment: fixed;
+}
+
+.parallax-img1 {
+    /* Image used */
+    background-image: url("/images/pexels-tetyana-kovyrina-10322825.jpg");
+    
+    /* Set a specific height for the container  */
+    min-height: 100vh;
+}
+
+.parallax-img2 {
+    /* Image used */
+    background-image: url("/images/pexels-dreamland-scape-10431594.jpg");
+    min-height: 100vh;
+}
+
+.content {
+    height: 30rem;  
+    /* background-color: #f7f0e7; */
+    background-color: #fff8f1;
+}
+
+.text {
+    width: 70vw;
+    }
+
+.footnote {
+    /* Fixes footnote at specific postition within the .container */
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 18rem;
+    background-color: #fff8f1;
+}
+
+/* For mobile */
+@media(max-width:768px){
+    h1 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .parallax-img1, .parallax-img2 {
+        background-attachment: scroll;
+    }
+    
+    .content {
+        height: 45rem;
+    }
+}
+
+@media(max-width:320px) {
+    .content {
+        height: 60rem;
+    }
+}

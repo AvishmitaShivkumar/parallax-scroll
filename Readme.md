@@ -1,6 +1,5 @@
 # The Parallax Scroll
-
-**Technologies used: HTML, CSS**
+**Created with HTML and CSS. Deployed with Vercel**
 
 This website was created with the sole purpose of learning how to create a parallax scrolling effect. 
 
